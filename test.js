@@ -1,4 +1,6 @@
-function count(count, messega) {
+"use strict";
+const countTesy = (count, messega) => {
+    //  console.log(messega + " " + count)
     return messega + " " + count;
-}
-console.log(count(1, "awd"));
+};
+countTesy(1, "awd");
