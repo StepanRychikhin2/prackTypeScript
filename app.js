@@ -12,14 +12,19 @@
 // 	countTesyy(inputValue, inputValue2);
 // })
 let age = 50;
-let namee = 'Max';
-let toggle = true;
-let empty = null;
-let notInitialize = undefined;
-let callback = (a) => {
-    return 100 + a;
-};
 console.log(age);
+let namee = 'Max';
+console.log(namee);
+let toggle = true;
+console.log(toggle);
+let empty = null;
+console.log(empty);
+let notInitialize = undefined;
+console.log(notInitialize);
+let callback = (a) => {
+    return console.log(100 + a);
+};
+callback(123);
 let anything = -20;
 anything = 'Text';
 anything = {};
@@ -29,6 +34,7 @@ some = 'Text';
 let str;
 str = some;
 let person = ['Max', 21];
+console.log(person);
 var loadStatus;
 (function (loadStatus) {
     loadStatus["loading"] = "LOADING";
@@ -45,18 +51,24 @@ else if (isLoad === loadStatus.ready) {
 }
 let MsrtNum;
 MsrtNum = 'awd';
+console.log(MsrtNum);
 MsrtNum = 123;
+console.log(MsrtNum);
 let orRun;
 orRun = 'enable';
+console.log(orRun);
 function showMessage(message) {
     console.log(message);
 }
+showMessage('privit');
 function calc(num1, num2) {
-    return num1 + num2;
+    return console.log(num1 + num2);
 }
+calc(123, 3);
 function customError() {
     throw new Error('Error');
 }
+// customError()
 const page1 = {
     title: 'The awesome page',
     likes: 100,
@@ -68,3 +80,4 @@ const page1 = {
     },
 };
 // console.log(myPage)
+console.log(page1);

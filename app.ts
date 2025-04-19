@@ -14,14 +14,19 @@
 // })
 
 let age: number = 50
-let namee: string = 'Max'
-let toggle: boolean = true
-let empty: null = null
-let notInitialize: undefined = undefined
-let callback = (a: number) => {
-	return 100 + a
-}
 console.log(age)
+let namee: string = 'Max'
+console.log(namee)
+let toggle: boolean = true
+console.log(toggle)
+let empty: null = null
+console.log(empty)
+let notInitialize: undefined = undefined
+console.log(notInitialize)
+let callback = (a: number) => {
+	return console.log(100 + a)
+}
+callback(123)
 
 let anything: any = -20
 anything = 'Text'
@@ -36,7 +41,7 @@ let str: string
 str = some as string
 
 let person: readonly [string, number] = ['Max', 21]
-
+console.log(person)
 enum loadStatus {
 	loading = 'LOADING',
 	ready = 'readi',
@@ -55,24 +60,25 @@ if (isLoad === loadStatus.loading) {
 
 let MsrtNum: string | number
 MsrtNum = 'awd'
+console.log(MsrtNum)
 MsrtNum = 123
-
+console.log(MsrtNum)
 let orRun: 'enable' | 'disable'
 
 orRun = 'enable'
-
+console.log(orRun)
 function showMessage(message: string) {
 	console.log(message)
 }
-
+showMessage('privit')
 function calc(num1: number, num2: number) {
-	return num1 + num2
+	return console.log(num1 + num2)
 }
-
+calc(123, 3)
 function customError() {
 	throw new Error('Error')
 }
-
+// customError()
 const page1: myPage = {
 	title: 'The awesome page',
 	likes: 100,
@@ -103,4 +109,4 @@ type myPage = {
 }
 
 // console.log(myPage)
-
+console.log(page1)
